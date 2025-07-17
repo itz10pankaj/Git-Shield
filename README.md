@@ -1,7 +1,7 @@
 
-# Git Wall 🧱
+# Git Shield 🧱
 
-Git Wall is a CLI tool that helps developers automatically **block or ignore specific files from being committed** using Git hooks (pre-commit). It's designed to enhance code hygiene and prevent unwanted files from being pushed to the repository.
+Git Shield is a CLI tool that helps developers automatically **block or ignore specific files from being committed** using Git hooks (pre-commit). It's designed to enhance code hygiene and prevent unwanted files from being pushed to the repository.
 
 ## ✨ Features
    Feature |
@@ -15,14 +15,14 @@ Git Wall is a CLI tool that helps developers automatically **block or ignore spe
 
 ```bash
 # Install Package
-npm install -g git-wall
+npm install -g git-shield
 🚀 Usage
 1. Initialize in your project
 
 # Make sure your project is already a Git repository:
 git init # If not already initialized
-# Then initialize Git Wall:
-git-wall init
+# Then initialize Git Shield:
+git-shield init
 
 ```
 >💡 This will create the following file if it doesn’t exist:
@@ -49,7 +49,7 @@ You can use glob patterns to match files and directories.
 
 ## ➡️ Make a Commit
 
-When you try to commit, Git Wall will check the staged files and block the commit if any blocked files are included.
+When you try to commit, Git Shield will check the staged files and block the commit if any blocked files are included.
 
 ```bash
 git add .
@@ -67,15 +67,15 @@ Fix the issue or update your config to allow these files
 ```
 ## 🛠 Development
 
-Clone this repo and link it locally if you're working on Git Wall itself:
+Clone this repo and link it locally if you're working on Git Shield itself:
 
 ```bash
-git clone https://github.com/itz10pankaj/Git-Wall.git
-cd git-wall
+git clone https://github.com/itz10pankaj/git-shield.git
+cd git-shield
 npm install
 npm link
 ```
-Now git-wall command will be available globally.
+Now git-shield command will be available globally.
 
 📄 License
 

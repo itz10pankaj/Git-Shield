@@ -7,7 +7,7 @@ const initRepo = require("../lib/init.js");
 const scan = require("../lib/scanner");
 
 program
-  .name("git-wall")
+  .name("git-shield")
   .description("Prevent accidental commit of sensitive files")
   .version("1.0.0");
 
@@ -21,7 +21,7 @@ program
 
 program
   .command("init")
-  .description("Setup Git Wall in this repo")
+  .description("Setup Git Shield in this repo")
   .action(() => {
     initRepo();
   });

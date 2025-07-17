@@ -1,20 +1,20 @@
-# 🤝 Contributing to git-wall
+# 🤝 Contributing to git-shield
 
-Thanks for wanting to contribute to `git-wall`! Here's how to get started.
+Thanks for wanting to contribute to `git-shield`! Here's how to get started.
 
 ## 🚀 Quick Start
 
 1. **Fork & clone** the repo
 2. **Set up development:**
    ```bash
-   git clone https://github.com/itz10pankaj/Git-Wall.git
-   cd git-wall
+   git clone https://github.com/itz10pankaj/git-shield.git
+   cd git-shield
    npm install
    npm link
    ```
-3. **Pick an issue** from [Issues](https://github.com/itz10pankaj/git-Wall/issues)
+3. **Pick an issue** from [Issues](https://github.com/itz10pankaj/git-shield/issues)
 4. **Create a branch:** `git checkout -b feature/your-feature`
-5. **Make changes & test:** `git-wall init`
+5. **Make changes & test:** `git-shield init`
 6. **Submit a PR**
 
 ## 📝 Code Standards

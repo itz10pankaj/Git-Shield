@@ -1,6 +1,6 @@
 {
-  "name": "git-wall",
-  "version": "1.0.3",
+  "name": "git-shield",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "bin": {
-    "git-wall": "./bin/index.js"
+    "git-shield": "./bin/index.js"
   },
   "dependencies": {
     "commander": "^14.0.0",
