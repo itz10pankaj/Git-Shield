@@ -80,3 +80,6 @@ Now git-shield command will be available globally.
 📄 License
 
 MIT © Pankaj
+
+
+'ENV FILE IN FOLDERS NOT RECOGINIZED'

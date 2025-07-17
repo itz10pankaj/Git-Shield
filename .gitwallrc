@@ -1,14 +1,42 @@
 {
   "ignore": [
-    "README.md"
+    "README.md",
+    "LICENSE.md"
   ],
   "blockPatterns": [
-    ".env",
-    "config/*.json",
-    "*.pem",
-    "secrets/*.json",
+    "**/*.env",
+    "**/*.env.*",
+    "**/secrets.*",
+    "**/*.pem",
+    "**/*.key",
+    "**/*.crt",
+    "**/*.p12",
+    "**/id_rsa*",
+    "**/.cert",
+    "**/config.*",
+    "**/config/**/*.json",
+    "**/credentials.*",
     "node_modules/**",
-    "*.log",
-    ".DS_Store"
+    "dist/**",
+    "build/**",
+    "coverage/**",
+    ".next/**",
+    ".turbo/**",
+    "**/*.log",
+    "**/*.pid",
+    "**/*.gz",
+    ".DS_Store",
+    "Thumbs.db",
+    ".vscode/**",
+    ".idea/**",
+    "**/.swp",
+    "**/*~",
+    "**/*.sqlite",
+    "**/*.db",
+    "**/*.lock",
+    "**/*.zip",
+    "**/*.tar",
+    "**/*.tgz",
+    "**/*.rar"
   ]
 }
