@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "README.md"
+  ],
+  "blockPatterns": [
+    ".env",
+    "config/*.json",
+    "*.pem",
+    "secrets/*.json",
+    "node_modules/**",
+    "*.log",
+    ".DS_Store"
+  ]
+}
