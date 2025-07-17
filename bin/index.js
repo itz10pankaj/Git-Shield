@@ -9,7 +9,7 @@ const scan = require("../lib/scanner");
 program
   .name("git-shield")
   .description("Prevent accidental commit of sensitive files")
-  .version("1.0.4");
+  .version("1.0.5");
 
 program
   .command("scan")

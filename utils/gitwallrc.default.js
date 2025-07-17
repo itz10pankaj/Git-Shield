@@ -275,11 +275,9 @@ module.exports = {
         "**/.gradle/**",          // Gradle
         "**/build/**",            // Gradle/Maven
         "**/.m2/**",              // Maven local repo
-        "**/bin/**",              // Binary output
         "**/*.hprof",             // Heap dumps
 
         // .NET
-        "**/bin/**",              // Binary output
         "**/obj/**",              // Object files
         "**/*.user",              // User-specific files
         "**/*.suo",               // Solution user options
@@ -307,7 +305,6 @@ module.exports = {
         // Go
         "**/vendor/**",           // Go vendor
         "**/*.exe",               // Go binaries
-        "**/*.test",              // Go test binaries
         "**/*.prof",              // Go profiling
 
         // Rust
