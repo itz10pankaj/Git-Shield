@@ -3,13 +3,13 @@
 const { Command } = require("commander");
 const program = new Command();
 
-const initRepo = require("../lib/init.js");
-const scan = require("../lib/scanner");
-
+const initRepo = require("../functions/init.js");
+const scan = require("../functions/scanner.js");
+const stats = require("../functions/stats.js");
 program
   .name("git-shield")
   .description("Prevent accidental commit of sensitive files")
-  .version("1.0.5");
+  .version("1.1.0");
 
 program
   .command("scan")
@@ -25,5 +25,10 @@ program
   .action(() => {
     initRepo();
   });
-
+program
+  .command("stats")
+  .description("View commit & contribution statistics")
+  .action(() => {
+    stats();
+  });
 program.parse();
