@@ -1,4 +1,7 @@
 module.exports = {
+    // Optional prefix to enforce on all commit messages. E.g., "GIN-"
+    commitPrefix: "",
+
     ignore: ["README.md", "LICENSE.md", "CHANGELOG.md", "CONTRIBUTING.md"],
 
     blockPatterns: [
