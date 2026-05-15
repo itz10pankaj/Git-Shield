@@ -1,4 +1,5 @@
 {
+  "commitPrefix": "GIN-",
   "ignore": [
     "README.md",
     "LICENSE.md",

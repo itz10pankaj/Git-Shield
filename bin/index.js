@@ -6,6 +6,7 @@ const program = new Command();
 const initRepo = require("../functions/init.js");
 const scan = require("../functions/scanner.js");
 const stats = require("../functions/stats.js");
+const checkCommit = require("../functions/check-commit.js");
 program
   .name("git-shield")
   .description("Prevent accidental commit of sensitive files")
@@ -31,4 +32,12 @@ program
   .action(() => {
     stats();
   });
+
+program
+  .command("check-commit <file>")
+  .description("Validate commit message prefix")
+  .action((file) => {
+    checkCommit(file);
+  });
+
 program.parse();
