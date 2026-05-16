@@ -10,7 +10,8 @@ Git Shield is a CLI tool that helps developers automatically **block or ignore s
  | 🧹 Keeps your commits clean and focused   |
  | 👨‍💻 Educates devs on best practices   |
  | 🧩 Integrates directly into your local Git hooks   |
- | 👌Quick overview of your Git repository's activity and contributors.  |
+ | 👌 Quick overview of your Git repository's activity and contributors.  |
+ | 📝 Enforces specific commit message prefixes (e.g. Jira/Ticket IDs) |
 
 ## 📦 Installation
 ### 🌍 Option 1: Global Installation (Recommended)
@@ -41,14 +42,16 @@ npx git-shield init
 ## 📁 File
 ```
 # .git/hooks/pre-commit
+# .git/hooks/commit-msg
 # .gitwallrc
 ```
 ## ➡️ Configuration
 
 Edit the **.gitwallrc** file to specify which files or patterns you want to block:
 
-```bash
+```json
 {
+  "commitPrefix": "GIN-",
   "blockedPatterns": [
     "src/config/*.env",
     "*.log",
@@ -76,6 +79,19 @@ Blocked file(s):
  - node_modules/some-lib/index.js
 
 Fix the issue or update your config to allow these files
+```
+
+### 📝 Commit Message Validation
+You can optionally enforce a specific prefix for all commit messages. This is especially useful for team projects where commits need to be tied to issue trackers (e.g., Jira tickets like `GIN-123`).
+
+If you set `"commitPrefix": "GIN-"` in your `.gitwallrc`, making a commit without this prefix will be blocked:
+
+```bash
+git commit -m "Fixed the login bug"
+
+# ❌ Commit message validation failed!
+# Commit message must start with "GIN-"
+# Your message: "Fixed the login bug"
 ```
 ## 📊 Additonal Functionality: git-shield stats
 The git-shield stats command gives you a quick overview of your Git repository's activity and contributors.
